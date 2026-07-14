@@ -4,7 +4,7 @@ import streamlit as st
 from google import genai
 from google.genai import types
 
-st.title("Gemini Chat App")
+st.title("Avinav's Chat App")
 
 API_KEY = Path(__file__).parent.joinpath("apikey").read_text().strip()
 
