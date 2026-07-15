@@ -6,7 +6,7 @@ from google.genai import types
 
 st.title("Avinav's Chat App")
 
-API_KEY = Path(__file__).parent.joinpath("apikey").read_text().strip()
+API_KEY = Path(__file__).parent.joinpath("apikey").read_text(encoding="utf-8").strip()
 
 client = genai.Client(api_key=API_KEY)
 
